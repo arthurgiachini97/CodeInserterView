@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CodeInserterView_Example' do
+  pod 'CodeInserterView', :path => '../'
+
+  target 'CodeInserterView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
