@@ -1,0 +1,6 @@
+framework module CodeInserterView {
+  umbrella header "CodeInserterView-umbrella.h"
+
+  export *
+  module * { export * }
+}

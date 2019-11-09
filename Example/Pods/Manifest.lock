@@ -1,0 +1,16 @@
+PODS:
+  - CodeInserterView (0.1.0)
+
+DEPENDENCIES:
+  - CodeInserterView (from `../`)
+
+EXTERNAL SOURCES:
+  CodeInserterView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CodeInserterView: cdb3d3935aedf6cce9bf8460ec0e46e4b0f76079
+
+PODFILE CHECKSUM: 31899ebb8ab20dd967c67cb079d66983190cc4e4
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,22 @@
+{
+  "name": "CodeInserterView",
+  "version": "0.1.0",
+  "summary": "A short description of CodeInserterView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Arthur Giachini/CodeInserterView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Arthur Giachini": "arthur.giachini@acad.pucrs.br"
+  },
+  "source": {
+    "git": "https://github.com/Arthur Giachini/CodeInserterView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CodeInserterView/Classes/**/*"
+}
