@@ -9,16 +9,16 @@
 Pod::Spec.new do |s|
   s.name             = 'CodeInserterView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CodeInserterView.'
+  s.summary          = 'CodeInserterView is a code inserter, being dynamic for how many digits were required'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
+#   * Write the description between the DESC delimiters     below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'CodeInserterView is a pod that offers a prompt code inserter, which you can put from 1 to 8 text fields'
                        DESC
 
   s.homepage         = 'https://github.com/Arthur Giachini/CodeInserterView'
@@ -28,9 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Arthur Giachini/CodeInserterView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'CodeInserterView/Classes/**/*'
+  s.ios.deployment_target = '12.0'
+ 
+  s.source_files = 'Source/**/*.swift'
+  s.swift_version = '5.0'
+  s.platforms = {
+      "ios" = "12.0"
+  }
   
   # s.resource_bundles = {
   #   'CodeInserterView' => ['CodeInserterView/Assets/*.png']

@@ -7,18 +7,29 @@
 //
 
 import UIKit
+import CodeInserterView
 
 class ViewController: UIViewController {
-
+    
+    var codeInserterStackView = CodeInserterStackView(numberOfDigitTextFields: .four, spacing: 10)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        configure()
+        codeInserterStackView.shouldReturnDigit = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func configure() {
+        view.backgroundColor = .white
+        
+        codeInserterStackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(codeInserterStackView)
+        
+        NSLayoutConstraint.activate([
+            codeInserterStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            codeInserterStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            codeInserterStackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75)
+        ])
     }
-
 }
 

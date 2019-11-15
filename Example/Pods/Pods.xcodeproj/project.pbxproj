@@ -12,9 +12,10 @@
 		5C5B63FDAD42BBE9C054728C2C0C4E8D /* Pods-CodeInserterView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF71206D82CF01806989E7C6200CD06E /* Pods-CodeInserterView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73951704238BFF9F31A0033090126201 /* Pods-CodeInserterView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2994122C305A8A2EAF13A0D685B5C2DD /* Pods-CodeInserterView_Tests-dummy.m */; };
 		742598529937D9D0C0F99406D3EAE088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B9838BF8BED1B34DD5EAD970536C983F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65A30AA1B415A3222DDF9F02840B11 /* ReplaceMe.swift */; };
 		CB6AA73E25FF73088430B88937E0EBBB /* Pods-CodeInserterView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19189A9792269C8763F04BCF87C9CFAE /* Pods-CodeInserterView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9AB7E5BD5220A022DAA761B0D6E8AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D7FE495B23776FED00401BF5 /* DigitTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE495A23776FED00401BF5 /* DigitTextField.swift */; };
+		D7FE495D2377700400401BF5 /* CodeInserterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE495C2377700400401BF5 /* CodeInserterStackView.swift */; };
 		DB9DBE9C302946BAE1EA5540D752C6C5 /* CodeInserterView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6471FB8DBBB5845C6B4E462BCA5D4F0 /* CodeInserterView-dummy.m */; };
 		EA1F8A20E2E5A2ADE433C4400A6E9D41 /* Pods-CodeInserterView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE97AD5057C9BCF89693DB33068A88E /* Pods-CodeInserterView_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -40,9 +41,8 @@
 		0993E52F86DB77C2A8A377265E6B16EE /* CodeInserterView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodeInserterView.xcconfig; sourceTree = "<group>"; };
 		19189A9792269C8763F04BCF87C9CFAE /* Pods-CodeInserterView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodeInserterView_Example-umbrella.h"; sourceTree = "<group>"; };
 		1B8F138932C292694A4EFA7DD03836A2 /* Pods-CodeInserterView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodeInserterView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		22D8659DA4899538600F07D8D2F72EDA /* Pods_CodeInserterView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CodeInserterView_Tests.framework; path = "Pods-CodeInserterView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D8659DA4899538600F07D8D2F72EDA /* Pods_CodeInserterView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeInserterView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2994122C305A8A2EAF13A0D685B5C2DD /* Pods-CodeInserterView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodeInserterView_Tests-dummy.m"; sourceTree = "<group>"; };
-		2B65A30AA1B415A3222DDF9F02840B11 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = CodeInserterView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		340704C975FA8C17B2BC7F81008BD77A /* Pods-CodeInserterView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodeInserterView_Example-Info.plist"; sourceTree = "<group>"; };
 		3F90FED9FC38A81F488F8FDC7AD143DA /* Pods-CodeInserterView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodeInserterView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -52,9 +52,9 @@
 		839447438910212D738B8683B34450AE /* Pods-CodeInserterView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodeInserterView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8CE97AD5057C9BCF89693DB33068A88E /* Pods-CodeInserterView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodeInserterView_Example-dummy.m"; sourceTree = "<group>"; };
 		8D9B4605318A9468EE2C4BF2D29DAFFE /* CodeInserterView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodeInserterView-Info.plist"; sourceTree = "<group>"; };
-		9829FCD3A0B372F99597FD8CB3370CF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		994E2E4BD4AD09C780F0F194AAB6495C /* CodeInserterView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CodeInserterView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9829FCD3A0B372F99597FD8CB3370CF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		994E2E4BD4AD09C780F0F194AAB6495C /* CodeInserterView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CodeInserterView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A56FD8B9E76233A6A5CCF9EA495D3357 /* Pods-CodeInserterView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodeInserterView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B6DC86EBBC6D3FB65888549695B95A2B /* Pods-CodeInserterView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodeInserterView_Tests-Info.plist"; sourceTree = "<group>"; };
 		B840BE11C0978A6E545B227EA4B8AEC5 /* Pods-CodeInserterView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodeInserterView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,12 +62,14 @@
 		BFA364570B25B27325BD7082E31B0F2B /* CodeInserterView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodeInserterView.modulemap; sourceTree = "<group>"; };
 		C15150706790BD7BB3F5CC94134504F9 /* CodeInserterView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodeInserterView-umbrella.h"; sourceTree = "<group>"; };
 		CB12836AA8A411454407AC5CD39DC301 /* Pods-CodeInserterView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodeInserterView_Example.modulemap"; sourceTree = "<group>"; };
-		E86556E08D98F8A658AA52A5EC79A6DF /* Pods_CodeInserterView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CodeInserterView_Example.framework; path = "Pods-CodeInserterView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0737DE1572183442D3B2DA581EAACEB /* CodeInserterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodeInserterView.framework; path = CodeInserterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FE495A23776FED00401BF5 /* DigitTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitTextField.swift; sourceTree = "<group>"; };
+		D7FE495C2377700400401BF5 /* CodeInserterStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeInserterStackView.swift; sourceTree = "<group>"; };
+		E86556E08D98F8A658AA52A5EC79A6DF /* Pods_CodeInserterView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeInserterView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0737DE1572183442D3B2DA581EAACEB /* CodeInserterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeInserterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18A8EA7335587AD23D2A6C8BA17D295 /* Pods-CodeInserterView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodeInserterView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F3518CFE552E9C68F950297787D2C57D /* Pods-CodeInserterView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodeInserterView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F6471FB8DBBB5845C6B4E462BCA5D4F0 /* CodeInserterView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodeInserterView-dummy.m"; sourceTree = "<group>"; };
-		FD7A1072873D0AE3027191EA1A7040E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FD7A1072873D0AE3027191EA1A7040E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FF71206D82CF01806989E7C6200CD06E /* Pods-CodeInserterView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodeInserterView_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +140,7 @@
 		46DFC9F1BBD070BE44F1F75DE01A7F02 /* CodeInserterView */ = {
 			isa = PBXGroup;
 			children = (
-				2B65A30AA1B415A3222DDF9F02840B11 /* ReplaceMe.swift */,
+				D7FE495923776F1100401BF5 /* Source */,
 				27701D2EFA17F266822978D4E575BBBF /* Pod */,
 				BFD9DE1A713BC92DCB660379A099427B /* Support Files */,
 			);
@@ -219,6 +221,15 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7FE495923776F1100401BF5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D7FE495C2377700400401BF5 /* CodeInserterStackView.swift */,
+				D7FE495A23776FED00401BF5 /* DigitTextField.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +326,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					FA1CA2672E7928574F724A70518BCF26 = {
+						LastSwiftMigration = 1110;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -366,7 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9DBE9C302946BAE1EA5540D752C6C5 /* CodeInserterView-dummy.m in Sources */,
-				B9838BF8BED1B34DD5EAD970536C983F /* ReplaceMe.swift in Sources */,
+				D7FE495B23776FED00401BF5 /* DigitTextField.swift in Sources */,
+				D7FE495D2377700400401BF5 /* CodeInserterStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0993E52F86DB77C2A8A377265E6B16EE /* CodeInserterView.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -420,7 +438,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CodeInserterView/CodeInserterView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CodeInserterView/CodeInserterView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CodeInserterView/CodeInserterView.modulemap";
 				PRODUCT_MODULE_NAME = CodeInserterView;
@@ -428,7 +446,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -451,7 +470,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CodeInserterView_Tests/Pods-CodeInserterView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CodeInserterView_Tests/Pods-CodeInserterView_Tests.modulemap";
@@ -473,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0993E52F86DB77C2A8A377265E6B16EE /* CodeInserterView.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -485,7 +505,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CodeInserterView/CodeInserterView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CodeInserterView/CodeInserterView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CodeInserterView/CodeInserterView.modulemap";
 				PRODUCT_MODULE_NAME = CodeInserterView;
@@ -493,7 +513,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -549,13 +569,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -577,7 +596,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CodeInserterView_Tests/Pods-CodeInserterView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CodeInserterView_Tests/Pods-CodeInserterView_Tests.modulemap";
@@ -645,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -674,7 +693,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CodeInserterView_Example/Pods-CodeInserterView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CodeInserterView_Example/Pods-CodeInserterView_Example.modulemap";
@@ -707,7 +726,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CodeInserterView_Example/Pods-CodeInserterView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CodeInserterView_Example/Pods-CodeInserterView_Example.modulemap";
