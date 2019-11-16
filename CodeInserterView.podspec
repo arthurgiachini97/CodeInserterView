@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CodeInserterView'
   s.version          = '0.1.0'
-  s.summary          = 'CodeInserterView is a code inserter, being dynamic for how many digits were required'
+  s.summary          = 'CodeInserterView is a pod that offers a prompt code inserter, which you can put from 1 to 8 text fields'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-'CodeInserterView is a pod that offers a prompt code inserter, which you can put from 1 to 8 text fields'
+'CodeInserterView is a dynamic code inserter, with automatic jump and return to the next field, where the user can input the code that he will receive.'
                        DESC
 
-  s.homepage         = 'https://github.com/Arthur Giachini/CodeInserterView'
+  s.homepage         = 'https://github.com/arthurgiachini97/CodeInserterView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Arthur Giachini' => 'arthur.giachini@acad.pucrs.br' }
