@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Arthur Giachini' => 'arthur.giachini@acad.pucrs.br' }
-  s.source           = { :git => 'https://github.com/Arthur Giachini/CodeInserterView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/arthurgiachini97/CodeInserterView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Source/**/*.swift'
   s.swift_version = '5.0'
   s.platforms = {
-      "ios" = "12.0"
+      "ios" => "12.0"
   }
   
   # s.resource_bundles = {
