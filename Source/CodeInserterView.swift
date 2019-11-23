@@ -29,7 +29,7 @@ protocol ReturnDigit {
     func returnDigit() -> Void
 }
 
-public class CodeInserterStackView: UIStackView {
+public class CodeInserterView: UIStackView {
     
     private var digitTextFields: [DigitTextField] = []
     private var numberOfDigitTextFields: NumberOfDigitTextFields!
@@ -78,7 +78,7 @@ public class CodeInserterStackView: UIStackView {
 }
 
 //MARK: Public functions
-extension CodeInserterStackView {
+extension CodeInserterView {
     // Return YES if all the digitTextFields are filled
     public func allDigitsTextfieldsFilled() -> Bool {
         let digitsInTextFieldsFilled = digitTextFields.filter { $0.text?.isEmpty == false }.count
@@ -91,7 +91,7 @@ extension CodeInserterStackView {
 }
 
 //MARK: ReturnDigit
-extension CodeInserterStackView: ReturnDigit {
+extension CodeInserterView: ReturnDigit {
     func returnDigit() {
         if digitTextFields.first != activeTextField && shouldReturnDigit {
             if activeTextField.text?.isEmpty == true {
@@ -105,14 +105,14 @@ extension CodeInserterStackView: ReturnDigit {
 }
 
 //MARK: UITextFieldDelegates
-extension CodeInserterStackView: UITextFieldDelegate {
+extension CodeInserterView: UITextFieldDelegate {
     
     public func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTextField = textField
         if textField.text?.isEmpty == false {
-            CodeInserterStackView.returnDigit = .no
+            CodeInserterView.returnDigit = .no
         } else {
-            CodeInserterStackView.returnDigit = .yes
+            CodeInserterView.returnDigit = .yes
         }
     }
     
@@ -125,7 +125,7 @@ extension CodeInserterStackView: UITextFieldDelegate {
         let count = textFieldText.count - substringToReplace.count + string.count
         
         if textField.text?.isEmpty == false {
-            CodeInserterStackView.returnDigit = .wait
+            CodeInserterView.returnDigit = .wait
         }
         
         if !string.isEmpty && digitTextFields.last != textField {

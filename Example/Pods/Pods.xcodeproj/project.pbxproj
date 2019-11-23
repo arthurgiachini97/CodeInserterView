@@ -14,8 +14,8 @@
 		742598529937D9D0C0F99406D3EAE088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		CB6AA73E25FF73088430B88937E0EBBB /* Pods-CodeInserterView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19189A9792269C8763F04BCF87C9CFAE /* Pods-CodeInserterView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9AB7E5BD5220A022DAA761B0D6E8AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D71F1BDF2388981000035512 /* CodeInserterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F1BDE2388981000035512 /* CodeInserterView.swift */; };
 		D7FE495B23776FED00401BF5 /* DigitTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE495A23776FED00401BF5 /* DigitTextField.swift */; };
-		D7FE495D2377700400401BF5 /* CodeInserterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE495C2377700400401BF5 /* CodeInserterStackView.swift */; };
 		DB9DBE9C302946BAE1EA5540D752C6C5 /* CodeInserterView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6471FB8DBBB5845C6B4E462BCA5D4F0 /* CodeInserterView-dummy.m */; };
 		EA1F8A20E2E5A2ADE433C4400A6E9D41 /* Pods-CodeInserterView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE97AD5057C9BCF89693DB33068A88E /* Pods-CodeInserterView_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -62,8 +62,8 @@
 		BFA364570B25B27325BD7082E31B0F2B /* CodeInserterView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodeInserterView.modulemap; sourceTree = "<group>"; };
 		C15150706790BD7BB3F5CC94134504F9 /* CodeInserterView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodeInserterView-umbrella.h"; sourceTree = "<group>"; };
 		CB12836AA8A411454407AC5CD39DC301 /* Pods-CodeInserterView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodeInserterView_Example.modulemap"; sourceTree = "<group>"; };
+		D71F1BDE2388981000035512 /* CodeInserterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeInserterView.swift; sourceTree = "<group>"; };
 		D7FE495A23776FED00401BF5 /* DigitTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitTextField.swift; sourceTree = "<group>"; };
-		D7FE495C2377700400401BF5 /* CodeInserterStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeInserterStackView.swift; sourceTree = "<group>"; };
 		E86556E08D98F8A658AA52A5EC79A6DF /* Pods_CodeInserterView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeInserterView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0737DE1572183442D3B2DA581EAACEB /* CodeInserterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeInserterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18A8EA7335587AD23D2A6C8BA17D295 /* Pods-CodeInserterView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodeInserterView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 		D7FE495923776F1100401BF5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D7FE495C2377700400401BF5 /* CodeInserterStackView.swift */,
+				D71F1BDE2388981000035512 /* CodeInserterView.swift */,
 				D7FE495A23776FED00401BF5 /* DigitTextField.swift */,
 			);
 			path = Source;
@@ -381,9 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71F1BDF2388981000035512 /* CodeInserterView.swift in Sources */,
 				DB9DBE9C302946BAE1EA5540D752C6C5 /* CodeInserterView-dummy.m in Sources */,
 				D7FE495B23776FED00401BF5 /* DigitTextField.swift in Sources */,
-				D7FE495D2377700400401BF5 /* CodeInserterStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

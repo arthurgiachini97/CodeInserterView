@@ -1,6 +1,6 @@
 //
 //  DigitTextField.swift
-//  ContaDigitalRealize
+//  CodeInserterView
 //
 //  Created by Arthur Giachini on 06/11/19.
 //  Copyright (c) 2019 Arthur Giachini. All rights reserved.
@@ -29,11 +29,11 @@ class DigitTextField: UITextField {
     
     override func deleteBackward() {
         super.deleteBackward()
-        if CodeInserterStackView.returnDigit == .yes && text?.isEmpty == true {
-            CodeInserterStackView.returnDigit = .no
+        if CodeInserterView.returnDigit == .yes && text?.isEmpty == true {
+            CodeInserterView.returnDigit = .no
             returnDigitDelegate.returnDigit()
-        } else if CodeInserterStackView.returnDigit == .wait {
-            CodeInserterStackView.returnDigit = .yes
+        } else if CodeInserterView.returnDigit == .wait {
+            CodeInserterView.returnDigit = .yes
         }
     }
 }

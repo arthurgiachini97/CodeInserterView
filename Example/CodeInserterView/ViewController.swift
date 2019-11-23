@@ -11,24 +11,24 @@ import CodeInserterView
 
 class ViewController: UIViewController {
     
-    var codeInserterStackView = CodeInserterStackView(numberOfDigitTextFields: .four, spacing: 10)
+    var codeInserterView = CodeInserterView(numberOfDigitTextFields: .four, spacing: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        codeInserterStackView.shouldReturnDigit = true
+        codeInserterView.shouldReturnDigit = true
     }
 
     private func configure() {
         view.backgroundColor = .white
         
-        codeInserterStackView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(codeInserterStackView)
+        codeInserterView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(codeInserterView)
         
         NSLayoutConstraint.activate([
-            codeInserterStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            codeInserterStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            codeInserterStackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75)
+            codeInserterView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            codeInserterView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            codeInserterView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75)
         ])
     }
 }
